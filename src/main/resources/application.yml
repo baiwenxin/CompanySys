@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/company
+    username: root
+    password: 123
+
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  data:
+    mongodb:
+      port: 27017
+      host: 192.168.10.123
+      database: demo
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+
